@@ -13,7 +13,8 @@
 - Programming language can be Python/C++.
 - Mind your code style.
 
-## Notes
+## Hint
 
 - OBJ/OFF/PLY file can be visualized with **meshlab** or **meshviewer** attached.
 - You are free to search online for the mapping tables needed and directly use them. But the other part of the algorithm should be implemented independently.
+- You can use `numpy.fromfile()` to read the binary files.
