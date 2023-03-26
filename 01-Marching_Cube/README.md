@@ -6,7 +6,7 @@ numpy
 
 ## Usage
 
-Arrange the files as below and directly run `MarchingCube.py`
+Arrange the files as below and directly run `MarchingCube.py`, the result will be saved as `result.obj`.
 
 ```
 │  MarchingCube.py
