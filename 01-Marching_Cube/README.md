@@ -1,4 +1,19 @@
-# MeshViewer
+# Marching Cube
 
-A softmax for visualizing obj/off/ply files, by [Pengshuai Wang](https://wang-ps.github.io/
-), the instructor of the course.
+## Requirement
+
+numpy
+
+## Usage
+
+Arrange the files as below and directly run `MarchingCube.py`
+
+```
+│  MarchingCube.py
+│  models.py
+│  tables.py
+│
+├─data
+│      01.sdf
+│      02.sdf
+```
