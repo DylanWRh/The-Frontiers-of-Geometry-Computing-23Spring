@@ -1,5 +1,7 @@
 # Marching Cube
 
+[Tutorial](./tutorial.md) and [report](report.md) for the assignment.
+
 ## Requirement
 
 numpy
