@@ -1,6 +1,6 @@
 # Marching Cube
 
-[Tutorial](./tutorial.md) and [report](report.md) for the assignment.
+[Tutorial](./Tutorial.md) and [report](report.md) for the assignment.
 
 ## Requirement
 
