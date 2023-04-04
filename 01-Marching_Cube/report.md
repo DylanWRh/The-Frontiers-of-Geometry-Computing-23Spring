@@ -17,7 +17,7 @@
 
 ## 实现说明
 
-**Step 1** 使用`numpy`读入二进制数据为128×128×64的`ndarray`, 存储每个顶点的值.
+**Step 1** 使用`numpy`读入二进制数据为128×128×128的`ndarray`, 存储每个顶点的值.
 
 **Step 2** 遍历每一个grid, 根据其8个顶点的值的符号判断grid与mesh相交的边, 以及面的连接方式. 查询所需的表来自[此处](http://www.paulbourke.net/geometry/polygonise/).
 
