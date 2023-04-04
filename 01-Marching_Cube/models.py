@@ -37,7 +37,7 @@ def marching_cubes(val, threshold=0):
                 for i in range(len(inter_verts)):
                     if inter_verts[i][0] is not None:
                         verts.append(inter_verts[i])
-                        local_to_global_index[i] = len(verts)-1
+                        local_to_global_index[i] = len(verts)
                 for face in inter_faces:
                     faces.append([local_to_global_index[i] for i in face])
     print(len(verts))
@@ -91,12 +91,8 @@ def calculate_intersection(p_1, p_2, val_1, val_2, threshold=0):
     output:
         coordinates of intersection point, ndarray shaped (3, )
     '''
-    eps = 1e-6
+    eps = 1e-10
     # special case
-    if np.abs(val_1-threshold) < eps:
-        return p_1
-    if np.abs(val_2-threshold) < eps:
-        return p_2
     if np.abs(val_1 - val_2) < eps:
         return (p_1+p_2)/2
     # linear interpolation
