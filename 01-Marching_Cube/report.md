@@ -31,5 +31,5 @@
 
 <center class="half">
 <img src="./result/result_01.png" width=300/>
-<img src="./result/result_02.png" width=200/>
+<img src="./result/result_02.png" width=300/>
 </center>
