@@ -40,6 +40,7 @@ $$
 ## 实现效果
 
 平滑前后效果如下图所示.
+
 ![Alt text](imgs/data.png)
 ![Alt text](imgs/result.png)
 
