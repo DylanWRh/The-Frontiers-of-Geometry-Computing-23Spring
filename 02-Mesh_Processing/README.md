@@ -4,12 +4,15 @@
 
 ## Requirement
 
-numpy
+numpy, openmesh, tqdm
 
 ## Usage
 
-Arrange the files as below and directly run `?.py`, the result will be saved as `?.obj`.
+Arrange the files as below and directly run `smoothing.py`, the result will be saved as `result.obj`.
 
 ```
-???
+│  smoothing.py
+│
+├─data
+│      smoothing.obj
 ```
