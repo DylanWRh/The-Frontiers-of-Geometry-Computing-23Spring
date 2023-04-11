@@ -8,7 +8,7 @@ numpy
 
 ## Usage
 
-Arrange the files as below and directly run `MarchingCube.py`, the result will be saved as `result.obj`.
+Arrange the files as below and directly run `MarchingCube.py`, the result will be saved in `./result`.
 
 ```
 │  MarchingCube.py
