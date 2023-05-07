@@ -70,11 +70,11 @@ def train(model, X, local_sigma, epoches=20000, lr=0.005, batch_size=16384, eval
         optimizer.step()
 
         if epoch % eval_every == 0:
-            print(f'Epoch {epoch+1}, loss = {loss.item()}, pred_loss = {pred_loss.item()}, grad_loss = {grad_loss.item()}, norm_loss = {0}')
+            print(f'Epoch {epoch+1}, loss = {loss.item()}, pred_loss = {pred_loss.item()}, grad_loss = {grad_loss.item()}, norm_loss = {norm_loss.item()}')
             if loss.item() < best_loss:
                 best_loss = loss.item()
                 best_model = model
-                SAVE_PATH = './checkpoint1.pth'
+                SAVE_PATH = './checkpoint.pth'
                 torch.save(best_model.state_dict(), SAVE_PATH)
 
 
