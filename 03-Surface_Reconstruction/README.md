@@ -2,10 +2,14 @@
 
 [Tutorial](./Tutorial.md) and [report](report.md) for the assignment.
 
-## Requirement
-
-
-
 ## Usage
 
-Arrange the files as below and directly run 
+Arrange the files as below. Run `python train.py` to train a model and `python inference.py` to do inference.
+```
+├── gargoyle.xyz
+├── checkpoint.pth
+├── inference.py
+├── model.py
+├── train.py
+└── utils.py
+```
