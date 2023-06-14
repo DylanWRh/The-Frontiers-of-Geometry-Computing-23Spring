@@ -15,4 +15,3 @@
 ## Requirements
 
 - You can either work alone or with a partner
-- **ZERO TOLERANCE** for plagiarism
