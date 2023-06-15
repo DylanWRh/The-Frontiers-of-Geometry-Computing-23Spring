@@ -9,7 +9,8 @@ class PoissonReconstructor(BaseReconstructor):
         super().__init__(points, normals, grid_nums, padding)
     
     def reconstruct(self):
-        # see the report for detailed mathematical derivation
+        print('-----Building Equation-----')
+        start_time = time.time()
         G = self.build_grad_operator()
         Wx = self.get_interpolation_weights_axis(axis=0)
         Wy = self.get_interpolation_weights_axis(axis=1)
@@ -20,12 +21,13 @@ class PoissonReconstructor(BaseReconstructor):
         vy = Wy.T @ self.normals[:, 1]
         vz = Wz.T @ self.normals[:, 2]
         v = np.concatenate([vx, vy, vz])
+        end_time = time.time()
+        print(f'Time consumption: {end_time-start_time}')
 
-        print('-----start solving-----')
+        print('-----Solving Equation-----')
         start_time = time.time()
         g, _ = la.cg(G.T @ G, G.T @ v, maxiter=2000, tol=1e-5)
         end_time = time.time()
-        print('-----end solving-----')
         print(f'Time consumption: {end_time-start_time}')
 
         sigma = np.mean(W @ g)
